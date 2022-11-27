@@ -1,7 +1,8 @@
 #The purpose of this app is to create an interactive histogram that shows the relationship between the 7 point and 5 point ideologies in Congress
 
 library(shiny)
-
+library(dplyr)
+library(ggplot2)
 #Import Data, select relevant values
 dat<-read.csv(url("https://www.dropbox.com/s/uhfstf6g36ghxwp/cces_sample_coursera.csv?raw=1"))
 dat<- dat %>% 
